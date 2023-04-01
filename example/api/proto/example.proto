@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package example;
+
+option go_package = "example/pkg/api/proto";
+
+message User {
+  string Name = 1;
+}
+
+message Book {
+  string Name = 1;
+  User Author = 2;
+}
